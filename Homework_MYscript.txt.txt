@@ -1,0 +1,6 @@
+#!/bin/bash
+touch /tmp/marz.txt
+echo "Date is: $(date +'%D')" >> /tmp/marz.txt
+cat /etc/group | tail -3 | sed 's/user/marz' >> /tmp/marz.txt
+echo "done"
+
