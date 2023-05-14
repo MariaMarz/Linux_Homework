@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in {1..10}
+do
+filename=$i'_'$(date +"%H:%M:%S")
+touch /opt/280223_m/marz/$filename
+sleep 1
+done
